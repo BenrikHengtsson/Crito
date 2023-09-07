@@ -78,15 +78,25 @@ header .container .menu .mainMenu {
   padding-top: 10px;
 }
 header .container .menu .mainMenu nav a {
+  display: inline-block;
   color: #191919;
   text-decoration: none;
   margin-right: 35px;
+  position: relative;
 }
 header .container .menu .mainMenu nav a.active {
   font-weight: 500;
 }
-header .container .menu .mainMenu nav a:hover {
-  text-decoration: underline;
+header .container .menu .mainMenu nav a.active::after, header .container .menu .mainMenu nav a:hover::after {
+  content: "";
+  position: absolute;
+  font-weight: 500;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
 }
 @media (min-width: 2500px) {
   header .container {
