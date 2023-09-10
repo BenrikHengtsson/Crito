@@ -8,16 +8,37 @@ body {
   color: #191919;
 }
 
+.btnLogin {
+  background-color: #f9d783;
+  border: 1px solid #f9d783;
+  color: #191919;
+  text-decoration: none;
+  padding: 8px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.btnLogin i {
+  margin-left: 3.5px;
+  font-size: 0.75em;
+}
+.btnLogin:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #f0efe9;
+}
+
 .btnPrimary {
   background-color: #f9d783;
   border: 1px solid #f9d783;
   color: #191919;
   text-decoration: none;
-  padding: 8px 25px;
+  padding: 15px 30px;
   font-weight: 600;
   border-radius: 25px;
   font-size: 16px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -26,6 +47,28 @@ body {
   font-size: 0.75em;
 }
 .btnPrimary:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #f0efe9;
+}
+
+.btnSecondary {
+  background-color: #f0efe9;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.btnSecondary i {
+  margin-left: 3.5px;
+  font-size: 0.75em;
+}
+.btnSecondary:hover {
   background-color: #191919;
   border: 1px solid #191919;
   color: #f0efe9;
@@ -135,5 +178,78 @@ header .container .menu .mainMenu nav a.active::after, header .container .menu .
 @media (min-width: 2500px) {
   header .container {
     max-width: 2048px;
+  }
+}
+
+.showcase {
+  background-color: #f0efe9;
+}
+.showcase .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showcase .container .content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .showcase .container .content {
+    text-align: left;
+  }
+}
+.showcase .container .content h1 {
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .showcase .container .content h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .showcase .container .content h1 {
+    font-size: 86px;
+  }
+}
+.showcase .container .content p {
+  font-size: 18px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content p {
+    font-size: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.showcase .container .content a {
+  margin-right: 0px;
+  display: block;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content a {
+    margin-right: 10px;
+    display: inline-block;
+  }
+}
+.showcase .container img {
+  display: none;
+  margin-right: -50px;
+}
+@media (min-width: 1200px) {
+  .showcase .container img {
+    display: block;
   }
 }

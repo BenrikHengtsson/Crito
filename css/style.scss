@@ -9,17 +9,67 @@ body {
   color: #191919;
 }
 
+.btnLogin {
+  background-color: #f9d783;
+  border: 1px solid #f9d783;
+  color: #191919;
+  text-decoration: none;
+  padding: 8px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 16px;
+  //   Satte align & justify så att text och logo (boxen) ser ut att ligga på samma textrad.
+  align-items: center;
+  justify-content: center;
+
+  i {
+    margin-left: 3.5px;
+    font-size: 0.75em;
+  }
+
+  &:hover {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #f0efe9;
+  }
+}
+
 .btnPrimary {
   background-color: #f9d783;
   border: 1px solid #f9d783;
   color: #191919;
   text-decoration: none;
-  padding: 8px 25px;
+  padding: 15px 30px;
   font-weight: 600;
   border-radius: 25px;
   font-size: 16px;
-  //   Satte flex & align så att text och logo (boxen) ser ut att ligga på samma textrad.
-  display: flex;
+  //   Satte align & justify så att text och logo (boxen) ser ut att ligga på samma textrad.
+  align-items: center;
+  justify-content: center;
+
+  i {
+    margin-left: 3.5px;
+    font-size: 0.75em;
+  }
+
+  &:hover {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #f0efe9;
+  }
+}
+
+.btnSecondary {
+  background-color: #f0efe9;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  //i demo video ändras knapp i showcase genom att manipulera "a" men hade lkikväl kunnat göras här då jag har delat upp knapp i 3 enskilda enheter.
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 16px;
+  //   Satte align & justify så att text och logo (boxen) ser ut att ligga på samma textrad.
   align-items: center;
   justify-content: center;
 
@@ -152,6 +202,73 @@ header {
 
     @media (min-width: 2500px) {
       max-width: 2048px;
+    }
+  }
+}
+
+.showcase {
+  background-color: #f0efe9;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .content {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: center;
+
+      @media (min-width: 1200px) {
+        text-align: left;
+      }
+      h1 {
+        font-family: "DM sans", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+
+        @media (min-width: 768px) {
+          font-size: 70px;
+        }
+
+        @media (min-width: 1200px) {
+          font-size: 70px;
+        }
+
+        @media (min-width: 1400px) {
+          font-size: 86px;
+        }
+      }
+      p {
+        //se över denna sektion i videon igen, väldigt trött-ca 60min in i video..
+        font-size: 18px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        @media (min-width: 768px) {
+          font-size: 20px;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+      }
+      a {
+        margin-right: 0px;
+        display: block;
+        margin-bottom: 20px;
+
+        @media (min-width: 768px) {
+          margin-right: 10px;
+          display: inline-block;
+        }
+      }
+    }
+    img {
+      display: none;
+      margin-right: -50px;
+
+      @media (min-width: 1200px) {
+        display: block;
+      }
     }
   }
 }
