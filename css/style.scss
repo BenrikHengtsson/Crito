@@ -120,6 +120,10 @@ body {
   p {
     color: #f94d1c;
     margin-bottom: 10px;
+    // osäker om detta "nedanför detta/font osv." fanns med i video, men bör va med enligt designmanual.
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   h2 {
@@ -319,6 +323,55 @@ header {
 
       @media (min-width: 1200px) {
         display: block;
+      }
+    }
+  }
+}
+
+.features {
+  padding-top: 50px;
+  .container {
+    border: 1px solid #f0efe9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .sectionTitle {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50%;
+      padding: 20px;
+      margin-right: 0px;
+      
+      @media (min-width:768px){
+        margin-right: 100px;
+      }
+      p {
+      }
+      h2 {
+      }
+      a {
+        text-align: center;
+      }
+    }
+
+    .rightContent {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      .infoPlate-1 {
+        img {
+        }
+        h3 {
+        }
+        p {
+        }
       }
     }
   }

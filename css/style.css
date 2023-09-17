@@ -109,6 +109,9 @@ body {
 .sectionTitle p {
   color: #f94d1c;
   margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 .sectionTitle h2 {
   color: #191919;
@@ -303,6 +306,42 @@ header .container .menu .mainMenu nav a.active::after, header .container .menu .
   }
 }
 
+.features {
+  padding-top: 50px;
+}
+.features .container {
+  border: 1px solid #f0efe9;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .features .container {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+.features .container .sectionTitle {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  padding: 20px;
+  margin-right: 0px;
+}
+@media (min-width: 768px) {
+  .features .container .sectionTitle {
+    margin-right: 100px;
+  }
+}
+.features .container .sectionTitle a {
+  text-align: center;
+}
+.features .container .rightContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
 .projectAndcases .container .sectionTitle {
   text-align: center;
 }
