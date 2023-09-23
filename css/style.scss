@@ -130,7 +130,11 @@ body {
     color: #191919;
     font-family: "DM sans", sans-serif;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 30px;
+    @media (min-width:768px){
+      font-size: 45px;
+    }
+
   }
 }
 
@@ -336,9 +340,34 @@ header {
     }
     .logos {
       // måste fixa grid area i mobil, om spons ska va med, annars ev. ta bort helt i mobilformat.
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // detta blev inge bra, sista bilden blir för stor, eftersom height blir auto. vet att jag kan fixa den men då måste jag introducera fixed height på img eller kapsla in i div med fixewd...
+      // grid-template-areas:  "sponsor1 sponsor2"
+      //                       "sponsor3 sponsor4"
+      //                       "sponsor5 sponsor5";
+
+      //                       #spons1{
+      //                         grid-area: sponsor1;
+      //                       }
+      //                       #spons2{
+      //                         grid-area: sponsor2;
+      //                       }
+      //                       #spons3{
+      //                         grid-area: sponsor3;
+      //                       }
+      //                       #spons4{
+      //                         grid-area: sponsor4;
+      //                       }
+      //                       #spons5{
+      //                         grid-area: sponsor5;
+      //                       }
+  
+
+
+
       @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -350,8 +379,13 @@ header {
       }
 
       img {
-        width: 100%;
+        width: 70%;
         height: auto;
+
+        @media (min-width: 768px) {
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
@@ -363,8 +397,10 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 50px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
+      padding: 50px;
       flex-direction: row;
       text-align: left;
     }
@@ -372,16 +408,19 @@ header {
     .sectionTitle {
       display: flex;
       flex-direction: column;
-      flex-basis: 50%;
+      flex-basis: 0%;
       padding: 20px;
       margin-right: 0px;
 
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         margin-right: 100px;
+        flex-basis: 50%;
       }
-      p {
+      
+      h2{
+        margin-bottom: 40px;
       }
-      h2 {
+
       }
       a {
         text-align: center;
@@ -391,19 +430,44 @@ header {
     .rightContent {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      padding: 20px;
+      column-gap: 0%;
+      justify-content: center;
+      align-items: center;
+      padding-right: 0px;
+      @media (min-width:px) {
+        column-gap: 10%;
+        padding-right: 50px;
+      }
+      
+      
       .infoPlate-1 {
+        padding-top: 40px;
+        padding-left: 10px;
+        @media (min-width:768px) {
+          padding-left: 0px;
+        }
         img {
+          height:40px;
+          width: auto;
+          margin-bottom: 40px;
         }
         h3 {
+          color: #191919;
+          font-family: "DM sans", sans-serif;
+          font-weight: 700;
+          font-size: 22px;
         }
         p {
+          font-family: "Inter", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          color:#b1b1b1;
+         
         }
       }
     }
   }
-}
+
 
 .projectAndcases {
   .container {
