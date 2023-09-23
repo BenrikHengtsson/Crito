@@ -338,6 +338,7 @@ header {
       // måste fixa grid area i mobil, om spons ska va med, annars ev. ta bort helt i mobilformat.
       display: grid;
       grid-template-columns: 1fr 1fr;
+      
       @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
