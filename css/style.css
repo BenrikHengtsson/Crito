@@ -74,6 +74,28 @@ body {
   color: #191919;
 }
 
+.btnSecondaryBlack {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #f0efe9;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.btnSecondaryBlack i {
+  margin-left: 3.5px;
+  font-size: 0.75em;
+}
+.btnSecondaryBlack:hover {
+  background-color: transparent;
+  border: 1px solid #191919;
+  color: #191919;
+}
+
 .btnSecondary {
   background-color: #f0efe9;
   border: 1px solid #191919;
@@ -420,8 +442,143 @@ header .container .menu .mainMenu nav a.active::after, header .container .menu .
 .features .rightContent .infoPlate-1 p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   color: #b1b1b1;
+}
+
+.aboutCompany .container {
+  display: block;
+  border: #191919;
+  padding-bottom: 70px;
+  border-style: dotted;
+}
+@media (min-width: 768px) {
+  .aboutCompany .container {
+    display: flex;
+    gap: 15rem;
+  }
+}
+.aboutCompany .container .founderSection {
+  position: relative;
+}
+.aboutCompany .container .founderSection .imageFrame {
+  height: 615px;
+  width: 533px;
+  overflow: hidden;
+  padding-top: 70px;
+}
+.aboutCompany .container .founderSection .imageFrame img {
+  height: 100%;
+  width: 100%;
+  padding-left: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutCompany .container .founderSection .founderInfo {
+  background-color: #beebff;
+  position: absolute;
+  width: 70%;
+  padding: 2rem;
+  bottom: 2rem;
+  left: 3rem;
+}
+.aboutCompany .container .founderSection .founderInfo .name {
+  color: #191919;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.aboutCompany .container .founderSection .founderInfo .title {
+  color: #f94d1c;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.aboutCompany .container .aboutRightcolumn .aboutSection {
+  display: flex;
+  flex-direction: column;
+}
+.aboutCompany .container .aboutRightcolumn .aboutSection .info1 {
+  margin-bottom: 1rem;
+}
+.aboutCompany .container .aboutRightcolumn .aboutButtons {
+  padding-top: 40px;
+}
+
+.ourServices {
+  background-color: #f0efe9;
+}
+.ourServices .container .sectionTitle {
+  width: 35vh;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.ourServices .container .serviceCards {
+  display: flex;
+  justify-content: space-around;
+}
+.ourServices .container .serviceCards .card1 {
+  background-color: #ffffff;
+  width: 308px;
+  height: 333px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #191919;
+  position: relative;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: 10px;
+}
+.ourServices .container .serviceCards .card1 .line {
+  width: 39px;
+  height: 1px;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: #191919;
+  margin: 48px 0px;
+}
+.ourServices .container .serviceCards .card1 h3 {
+  color: #191919;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.ourServices .container .serviceCards .card1 i {
+  padding: 14px;
+  border: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  color: #ffffff;
+  border-color: #191919;
+  background-color: #191919;
+  position: absolute;
+  bottom: 48px;
+  right: 30px;
+}
+.ourServices .container .serviceCards .card1:hover {
+  background-color: #f9d783;
+  color: #191919;
+}
+.ourServices .container .serviceCards .card1:hover i {
+  color: #191919;
+  background-color: #ffffff;
+  border-color: transparent;
+}
+.ourServices .container .centerContent {
+  padding-top: 50px;
+  padding-bottom: 120px;
+}
+.ourServices .container .centerContent .btnPrimary {
+  background-color: transparent;
+  border-color: #191919;
+}
+.ourServices .container .centerContent .btnPrimary:hover {
+  background-color: #191919;
+  border-color: #191919;
 }
 
 .projectAndcases .container .sectionTitle {

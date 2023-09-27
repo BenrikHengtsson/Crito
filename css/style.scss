@@ -82,6 +82,30 @@ body {
     color: #191919;
   }
 }
+.btnSecondaryBlack {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #f0efe9;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 16px;
+  //   Satte align & justify så att text och logo (boxen) ser ut att ligga på samma textrad.
+  align-items: center;
+  justify-content: center;
+
+  i {
+    margin-left: 3.5px;
+    font-size: 0.75em;
+  }
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #191919;
+    color: #191919;
+  }
+}
 .btnSecondary {
   background-color: #f0efe9;
   border: 1px solid #191919;
@@ -131,10 +155,9 @@ body {
     font-family: "DM sans", sans-serif;
     font-weight: 700;
     font-size: 30px;
-    @media (min-width:768px){
+    @media (min-width: 768px) {
       font-size: 45px;
     }
-
   }
 }
 
@@ -364,9 +387,6 @@ header {
       //                       #spons5{
       //                         grid-area: sponsor5;
       //                       }
-  
-
-
 
       @media (min-width: 768px) {
         display: grid;
@@ -416,58 +436,213 @@ header {
         margin-right: 100px;
         flex-basis: 50%;
       }
-      
-      h2{
+
+      h2 {
         margin-bottom: 40px;
       }
+    }
+    a {
+      text-align: center;
+    }
+  }
 
+  .rightContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+    @media (min-width: px) {
+      column-gap: 10%;
+      padding-right: 50px;
+    }
+
+    .infoPlate-1 {
+      padding-top: 40px;
+      padding-left: 10px;
+      @media (min-width: 768px) {
+        padding-left: 0px;
       }
-      a {
-        text-align: center;
+      img {
+        height: 40px;
+        width: auto;
+        margin-bottom: 40px;
+      }
+      h3 {
+        color: #191919;
+        font-family: "DM sans", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+      }
+      p {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #b1b1b1;
+      }
+    }
+  }
+}
+
+.aboutCompany {
+  .container {
+    display: block;
+    border: #191919;
+    padding-bottom: 70px;
+    border-style: dotted;
+    // padding-top: 70px;
+    // padding-bottom: 40px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 15rem;
+    }
+    .founderSection {
+      position: relative;
+      .imageFrame {
+        height: 615px;
+        width: 533px;
+        overflow: hidden;
+        padding-top: 70px;
+        img {
+          height: 100%;
+          width: 100%;
+          padding-left: 6rem;
+          object-fit: cover;
+        }
+      }
+      .founderInfo {
+        background-color: #beebff;
+        position: absolute;
+        width: 70%;
+        padding: 2rem;
+        bottom: 2rem;
+        left: 3rem;
+        .name {
+          color: #191919;
+          font-family: "DM sans", sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+        }
+        .title {
+          color: #f94d1c;
+          font-family: "DM sans", sans-serif;
+          font-weight: 700;
+          font-size: 18px;
+        }
       }
     }
 
-    .rightContent {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 0%;
-      justify-content: center;
-      align-items: center;
-      padding-right: 0px;
-      @media (min-width:px) {
-        column-gap: 10%;
-        padding-right: 50px;
+    .aboutRightcolumn {
+      .sectionTitle {
       }
-      
-      
-      .infoPlate-1 {
+      .aboutSection {
+        display: flex;
+        flex-direction: column;
+
+        .info1 {
+          margin-bottom: 1rem;
+        }
+        .info2 {
+        }
+      }
+
+      .aboutButtons {
         padding-top: 40px;
-        padding-left: 10px;
-        @media (min-width:768px) {
-          padding-left: 0px;
+      }
+    }
+  }
+}
+
+.ourServices {
+  background-color: #f0efe9;
+  .container {
+    .sectionTitle {
+      width: 35vh;
+      padding-top: 100px;
+      padding-bottom: 40px;
+
+    }
+    .serviceCards {
+      display: flex;
+      justify-content: space-around;
+      
+
+      .card1 {
+        background-color: #ffffff;
+        width: 308px;
+        height: 333px;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+        color: #191919;
+        position: relative;
+        padding-right:30px;
+        padding-left: 30px;
+        margin-right: 10px;
+
+        .line{
+          width: 39px;
+          height: 1px;
+          border-width: 1.5px;
+          border-style: solid;
+          border-color: #191919;
+          margin: 48px 0px;
         }
-        img {
-          height:40px;
-          width: auto;
-          margin-bottom: 40px;
-        }
+       
         h3 {
           color: #191919;
           font-family: "DM sans", sans-serif;
           font-weight: 700;
           font-size: 22px;
         }
-        p {
-          font-family: "Inter", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          color:#b1b1b1;
-         
+          i {
+            
+            padding: 14px;
+            border: transparent;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 50%;
+            color: #ffffff;
+            border-color: #191919;
+            background-color: #191919;
+            position: absolute;
+            bottom: 48px;
+            right: 30px;
+
+          }
+          &:hover {
+            background-color: #f9d783;
+            color: #191919;
+            i {
+              color: #191919;
+              background-color: #ffffff;
+              border-color: transparent;
+            }
+          }
+        
+      }
+    }
+    .centerContent{
+      padding-top:50px ;
+      padding-bottom:120px ;
+
+      .btnPrimary{
+        background-color: transparent;
+        border-color: #191919;
+
+        &:hover{
+          background-color: #191919;
+          border-color: #191919;
+
         }
       }
     }
   }
-
+}
 
 .projectAndcases {
   .container {
