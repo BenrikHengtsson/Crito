@@ -562,12 +562,10 @@ header {
       width: 35vh;
       padding-top: 100px;
       padding-bottom: 40px;
-
     }
     .serviceCards {
       display: flex;
       justify-content: space-around;
-      
 
       .card1 {
         background-color: #ffffff;
@@ -580,11 +578,11 @@ header {
         text-decoration: none;
         color: #191919;
         position: relative;
-        padding-right:30px;
+        padding-right: 30px;
         padding-left: 30px;
         margin-right: 10px;
 
-        .line{
+        .line {
           width: 39px;
           height: 1px;
           border-width: 1.5px;
@@ -592,53 +590,112 @@ header {
           border-color: #191919;
           margin: 48px 0px;
         }
-       
+
         h3 {
           color: #191919;
           font-family: "DM sans", sans-serif;
           font-weight: 700;
           font-size: 22px;
         }
+        i {
+          padding: 14px;
+          border: transparent;
+          border-style: solid;
+          border-width: 1px;
+          border-radius: 50%;
+          color: #ffffff;
+          border-color: #191919;
+          background-color: #191919;
+          position: absolute;
+          bottom: 48px;
+          right: 30px;
+        }
+        &:hover {
+          background-color: #f9d783;
+          color: #191919;
           i {
-            
-            padding: 14px;
-            border: transparent;
-            border-style: solid;
-            border-width: 1px;
-            border-radius: 50%;
-            color: #ffffff;
-            border-color: #191919;
-            background-color: #191919;
-            position: absolute;
-            bottom: 48px;
-            right: 30px;
-
-          }
-          &:hover {
-            background-color: #f9d783;
             color: #191919;
-            i {
-              color: #191919;
-              background-color: #ffffff;
-              border-color: transparent;
-            }
+            background-color: #ffffff;
+            border-color: transparent;
           }
-        
+        }
       }
     }
-    .centerContent{
-      padding-top:50px ;
-      padding-bottom:120px ;
+    .centerContent {
+      padding-top: 50px;
+      padding-bottom: 120px;
 
-      .btnPrimary{
+      .btnPrimary {
         background-color: transparent;
         border-color: #191919;
 
-        &:hover{
+        &:hover {
           background-color: #191919;
           border-color: #191919;
-
         }
+      }
+    }
+  }
+}
+
+.chooseUs {
+  position: relative;
+  .container {
+    display: flex;
+    .leftContent {
+      .sectionTitle {
+        padding-right: 400px;
+      }
+      .objectLink {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding-bottom: 32px;
+
+        img {
+          width: 60px;
+          height: auto;
+        }
+      }
+      .infoTxt {
+        padding-left: 25px;
+        h3 {
+          color: #191919;
+          font-family: "DM sans", sans-serif;
+          font-weight: 700;
+          font-size: 22px;
+        }
+        p {
+          color: #6c6c6c;
+          font-family: "Inter", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+    .rightContent {
+      z-index: 1;
+      width: 845px;
+      height: 500px;
+      img {
+        width: 645px;
+        height: 505px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding-top: 80px;
+        
+      }
+      .bkgBox {
+        background-color:#f0efe9;
+        width: 100%;
+        height: 60%;
+        z-index: -1;
+        position: absolute;
+        top: 260px;
+        left: 45%;
+        
+
       }
     }
   }

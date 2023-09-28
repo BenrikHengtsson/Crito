@@ -581,6 +581,64 @@ header .container .menu .mainMenu nav a.active::after, header .container .menu .
   border-color: #191919;
 }
 
+.chooseUs {
+  position: relative;
+}
+.chooseUs .container {
+  display: flex;
+}
+.chooseUs .container .leftContent .sectionTitle {
+  padding-right: 400px;
+}
+.chooseUs .container .leftContent .objectLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-bottom: 32px;
+}
+.chooseUs .container .leftContent .objectLink img {
+  width: 60px;
+  height: auto;
+}
+.chooseUs .container .leftContent .infoTxt {
+  padding-left: 25px;
+}
+.chooseUs .container .leftContent .infoTxt h3 {
+  color: #191919;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.chooseUs .container .leftContent .infoTxt p {
+  color: #6c6c6c;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.chooseUs .container .rightContent {
+  z-index: 1;
+  width: 845px;
+  height: 500px;
+}
+.chooseUs .container .rightContent img {
+  width: 645px;
+  height: 505px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 80px;
+}
+.chooseUs .container .rightContent .bkgBox {
+  background-color: #f0efe9;
+  width: 100%;
+  height: 60%;
+  z-index: -1;
+  position: absolute;
+  top: 260px;
+  left: 45%;
+}
+
 .projectAndcases .container .sectionTitle {
   text-align: center;
 }
