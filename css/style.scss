@@ -559,7 +559,6 @@ header {
       .aboutButtons {
         padding-top: 40px;
 
-
         .playBtn {
           display: inline;
           background-color: transparent;
@@ -946,8 +945,28 @@ header {
     .mainContent {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      padding-bottom: 60px;
+
       .contentCard {
         width: 447px;
+
+        h3 {
+          color: #191919;
+          font-family: "DM sans", sans-serif;
+          font-weight: 700;
+          font-size: 22px;
+          width: 300px;
+        }
+        #newsCategory{
+          color: rgb(25, 25, 25, 0.7);
+          padding-top: 25px;
+        }
+        #txtContent {
+          font-family: "Inter", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          color: rgb(25, 25, 25, 0.7);
+        }
         .mediaDate {
           position: relative;
           img {
@@ -957,7 +976,7 @@ header {
           }
           .calBox {
             display: inline-block;
-            padding: 10px 11px 8px 14px;
+            padding: 10px 11px 0px 14px;
             background-color: #f9d783;
             position: absolute;
             z-index: 0;
@@ -965,8 +984,20 @@ header {
             left: 16px;
 
             h5 {
+              color: #191919;
+              font-family: "DM sans", sans-serif;
+              font-weight: 700;
+              font-size: 22px;
+              padding-top: 5px;
+              margin-bottom: 0px;
             }
             p {
+              font-family: "Inter", sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+              color: rgb(25, 25, 25, 0.7);
+              padding: 0px;
+              margin-bottom: 8px;
             }
           }
         }
@@ -974,12 +1005,35 @@ header {
     }
 
     .centerContent {
-      padding: 20px;
+     padding-bottom: 90px;
 
       img {
         padding-right: 10px;
       }
     }
+  }
+}
+
+.signup{
+  background-color: #F0EFE9;
+  .container{
+    
+    .subsContent{
+      display: flex;
+      justify-content: space-between;
+      padding: 100px 0px;
+    .sectionTitle{
+      padding: 0px;
+
+    }
+    .subscribeRight{
+      display: flex;
+      align-items: center;
+      
+      .userInput{}
+      .subBtn{}
+    }
+  }
   }
 }
 
@@ -1050,6 +1104,7 @@ footer {
 
     a {
       color: #ffffff;
+      padding-right: 25px;
     }
     .copyright {
       p {
