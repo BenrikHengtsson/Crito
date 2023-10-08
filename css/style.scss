@@ -29,6 +29,7 @@ body {
   //   Satte align & justify så att text och logo (boxen) ser ut att ligga på samma textrad.
   align-items: center;
   justify-content: center;
+  transition: background-color 0.2s ease-in-out,color 0.1s ease-in-out;
 
   i {
     margin-left: 3.5px;
@@ -39,6 +40,7 @@ body {
     background-color: #191919;
     border: 1px solid #191919;
     color: #f0efe9;
+    cursor: pointer;
   }
 }
 
@@ -54,6 +56,8 @@ body {
   //   Satte align & justify så att text och logo (boxen) ser ut att ligga på samma textrad.
   align-items: center;
   justify-content: center;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+
 
   i {
     margin-left: 3.5px;
@@ -78,6 +82,8 @@ body {
   //   Satte align & justify så att text och logo (boxen) ser ut att ligga på samma textrad.
   align-items: center;
   justify-content: center;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border 0.28s ease-in-out;
+
 
   i {
     margin-left: 3.5px;
@@ -102,6 +108,8 @@ body {
   //   Satte align & justify så att text och logo (boxen) ser ut att ligga på samma textrad.
   align-items: center;
   justify-content: center;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+
 
   i {
     margin-left: 3.5px;
@@ -127,6 +135,8 @@ body {
   //   Satte align & justify så att text och logo (boxen) ser ut att ligga på samma textrad.
   align-items: center;
   justify-content: center;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+
 
   i {
     margin-left: 3.5px;
@@ -298,6 +308,16 @@ header {
 
 .showcase {
   background-color: #f0efe9;
+  position: relative;
+  z-index: 0;
+
+  .showcaseLines{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+  }
   .container {
     display: flex;
     justify-content: space-between;
@@ -543,8 +563,8 @@ header {
     }
 
     .aboutRightcolumn {
-      .sectionTitle {
-      }
+      // .sectionTitle {
+      // }
       .aboutSection {
         display: flex;
         flex-direction: column;
@@ -552,8 +572,8 @@ header {
         .info1 {
           margin-bottom: 1rem;
         }
-        .info2 {
-        }
+        // .info2 {
+        // }
       }
 
       .aboutButtons {
@@ -563,6 +583,11 @@ header {
           display: inline;
           background-color: transparent;
           padding-left: 40px;
+          
+          p{
+            display: inline;
+            padding-left: 15px;
+          }
 
           i {
             border: #191919;
@@ -584,6 +609,15 @@ header {
 
 .ourServices {
   background-color: #f0efe9;
+  position: relative;
+  z-index: 0;
+
+  .bkgLines{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+  }
   .container {
     .sectionTitle {
       width: 49vh;
@@ -680,9 +714,34 @@ header {
         text-decoration: none;
         padding-bottom: 32px;
 
+        &:hover{
+          img{
+          animation: rockingIcon 0.7s infinite ;
+
+          @keyframes rockingIcon{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+              transform: rotate(45deg);
+            }
+            50%{
+              transform: rotate(-45deg);
+            }
+            75%{
+              transform: rotate(-0deg);
+            }
+            100%{
+              transform: rotate(0deg);
+            }
+          }
+        }
+        }
+
         img {
           width: 60px;
           height: auto;
+
         }
       }
       .infoTxt {
@@ -797,8 +856,8 @@ header {
       display: flex;
       justify-content: space-between;
 
-      .sectionTitle {
-      }
+      // .sectionTitle {
+      // }
 
       .teamButton {
         padding-top: 120px;
@@ -861,8 +920,8 @@ header {
 
     .centerContent {
       text-align: center;
-      .sectionTitle {
-      }
+      // .sectionTitle {
+      // }
     }
     .clientSection {
       display: grid;
@@ -874,7 +933,7 @@ header {
       .client {
         width: 350px;
         height: 305px;
-        // padding: 49px 35px;
+       
         .star {
           padding-bottom: 20px;
         }
@@ -907,6 +966,12 @@ header {
             border-radius: 50px;
             margin-right: 15px;
           }
+          #jackAss {
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border-radius: 50px;
+          }
           .avatarTitle {
             justify-content: center;
           }
@@ -914,8 +979,8 @@ header {
       }
     }
   }
-  .centerContent {
-  }
+  // .centerContent {
+  // }
   .bottomBox {
     height: 120px;
     width: auto;
@@ -947,8 +1012,13 @@ header {
       grid-template-columns: 1fr 1fr 1fr;
       padding-bottom: 60px;
 
+      a{
+        text-decoration: none;
+      }
+
       .contentCard {
         width: 447px;
+        
 
         h3 {
           color: #191919;
@@ -1016,11 +1086,21 @@ header {
 
 .signup{
   background-color: #F0EFE9;
+  position: relative;
+  z-index: 0;
+  .subLines{
+    position: absolute;
+    z-index: -1;
+    bottom: 50px;
+    right: 0;
+  }
+
   .container{
     
     .subsContent{
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 100px 0px;
     .sectionTitle{
       padding: 0px;
@@ -1030,8 +1110,18 @@ header {
       display: flex;
       align-items: center;
       
-      .userInput{}
-      .subBtn{}
+      .userInput{
+        input{
+          padding: 15px 20px;
+          border-radius: 25px;
+          outline: none;
+          border: 1px solid rgba(25, 25, 25, 0.10);
+          margin-right: 20px;
+         
+        }
+
+      }
+      
     }
   }
   }
@@ -1039,6 +1129,14 @@ header {
 
 footer {
   background-color: #0e1021;
+  position: relative;
+  z-index: 0;
+  .bkgLines{
+    position: absolute;
+    z-index: -1;
+    bottom: 70px;
+    right: 0;
+  }
 
   .container {
     p {
@@ -1059,7 +1157,7 @@ footer {
       padding-top: 114px;
 
       img {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
       }
     }
     .menuSection {
@@ -1102,9 +1200,14 @@ footer {
     justify-content: space-between;
     margin-top: 30px;
 
+    .socialMediabottom{
+      margin-right: 20px;
+    }
+
     a {
       color: #ffffff;
-      padding-right: 25px;
+      
+      padding-right: 20px;
     }
     .copyright {
       p {
